@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Meal-Tracker Web App",
+    "stack": ["React", "Express", "Node", "MongoDB"],
+    "techs": [
+      "React",
+      "Redux",
+      "Express",
+      "Node",
+      "MongoDB",
+      "Mongoose",
+      "Passport",
+      "Google OAuth 2.0",
+      "Axios",
+      "Lodash",
+      "HTML/CSS",
+      "Styled-components"
+    ],
+    "about": "Web application developed for personal use which allows the user to log in and track meals. Nutritional information can be entered manually, pulled from the Nutritionix API by means of a search bar and dropdown menu, or entered automatically from the Favorites list. The application will display daily calorie, fat, carbohydrate, fiber, sugar, protein, sodium, and net carb intake for users on a ketogenic diet. Historical daily totals are also available to view.",
+    "note": "",
+    "demoLink": "https://food-tracker-react.herokuapp.com/",
+    "codeLink": "https://github.com/chasewhitney/meal-tracker-react",
+    "image": "./img/ctr-dashboard.png"
+  },
+  {
+    "name": "DB Builder for D&D Spell Wiki",
+    "stack": [],
+    "techs": ["Axios", "fs"],
+    "about": "Queries D&D 5e API and writes spell data for all Dungeons & Dragons 5th edition spells to spellData.json",
+    "note": "",
+    "demoLink": "",
+    "codeLink": "https://github.com/chasewhitney/dbBuilder-DnDSpells",
+    "image": "./img/ctr-dropdown.png"
+  },
+  {
+    "name": "Meal-Tracker v2 Back End",
+    "stack": ["Express", "Node", "MongoDB"],
+    "techs": [
+      "Express",
+      "Node",
+      "MongoDB",
+      "Mongoose",
+      "Jasonwebtoken",
+      "Bcryptjs",
+      "Joi",
+      "Winston@2",
+      "Jest"
+    ],
+    "about": "New back end for the next iteration of the Meal-Tracker app. Upgrades include logging, error-handling, unit and integration testing",
+    "note": "",
+    "demoLink": "",
+    "codeLink": "https://github.com/chasewhitney/ct-backend",
+    "image": "./img/ctr-dropdown.png"
+  },
+  {
+    "name": "GameNight Web App",
+    "stack": ["Angular", "Express", "Node", "MongoDB"],
+    "techs": [
+      "Angular 1.6",
+      "Express",
+      "Node",
+      "MongoDB",
+      "Passport",
+      "Nodemailer",
+      "HTML/CSS"
+    ],
+    "about": "This app was my final solo project at Prime Digital Academy. Allows users to create, manage, search for, and apply to attend local gaming/sports events. Events are created as either a board game, video game, or outdoor event. Created events appear in a Google Maps UI which can be interacted with, allowing users to review event details, save the event to a My Events section and request approval from the host to attend the event. Once the event host approves a request to attend, the approved user has access to the event's address.",
+    "note": "Because GoogleMaps is no longer free, app demo is unavailable.",
+    "demoLink": "",
+    "codeLink": "https://github.com/chasewhitney/gamenight",
+    "image": "./img/ctr-dropdown.png"
+  },
+  {
+    "name": "Goal Tracker CI",
+    "stack": ["Angular", "Express", "Node", "SQL"],
+    "techs": [
+      "Angular 1.6",
+      "Express",
+      "Node",
+      "PostgresSQL",
+      "Angular Material",
+      "Passport",
+      "Nodemailer",
+      "HTML/CSS",
+      "admin/user authorization"
+    ],
+    "about": "Goal Tracker CI was developed for CHOICE, INC and allows the staff at three different locations to track the personal and professional goals of the participants in their day program services, while also providing data on goal completion over a set period of time. At the basic staff level, users will be able to enter morning and afternoon goal completion, view previous days’ entries, and mark a participant absent. Case managers will also be able to create and edit personalized goals for participants and review summary data for three month and six month periods in order to write reports. Location administrators will be able to manage staff, including add and delete staff accounts; manage participants, including adding and removing participants and assigning case managers; and managing job site information. Developed by Amanda Kirchner, Nicole Martin, Ted Cross, and myself.",
+    "note": "",
+    "demoLink": "",
+    "codeLink": "https://github.com/chasewhitney/CHOICE",
+    "image": "http://www.choicejobs.org/templates/rt_interstellar/custom/images/logo/choice-logo-hrz.png"
+  },
+  {
+    "name": "LoL Recent Game Data - D3 Sunburst",
+    "stack": ["Angular", "Express", "Node"],
+    "techs": ["Angular 1.6", "Express", "Node", "d3", "HTML/CSS"],
+    "about": "Takes a League of Legends summoner name and displays a sunburst as an interactive visual representation of the results of the player's recently-played matches.",
+    "note": "Riot API has since changed, so the demo will be unavailable until this app is updated",
+    "demoLink": "",
+    "codeLink": "https://github.com/chasewhitney/riotapi-v2",
+    "image": "./img/ctr-dropdown.png"
+  },
+  {
+    "name": "Portfolio Page",
+    "stack": ["React"],
+    "techs": ["React", "HTML/CSS", "SASS"],
+    "about": "Page to make viewing my recent projects easy",
+    "note": "",
+    "demoLink": "",
+    "codeLink": "www.notPushedToGitHubYet.com",
+    "image": "./img/ctr-dropdown.png"
+  }
+]
