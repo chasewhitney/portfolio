@@ -1,7 +1,4 @@
 // Config -----------------------------------
-$hue: 220;
-$saturation: 13%;
-$brightness: 18%;
 
 $default: #ffffff; // default text
 
@@ -18,8 +15,12 @@ $orange-1: hsl(29, 54%, 61%); // <-orange 1
 $orange-2: hsl(39, 67%, 69%); // <-orange 2
 
 // Base colors -----------------------------------
-$bg: hsl($hue, $saturation, $brightness);
-$bg-2: hsl($hue, $saturation, 10%);
-
+$bg-2: #21242b;
+$bg-1: #242529;
+$bg-3: #1f2023;
+$bg-4: #191a1d;
 // Alt
-$bg-z: #22262a;
+
+// $bg-1: #22262a;
+// $bg-2: #222327;
+// $bg-3: #191a1d;
