@@ -14,7 +14,11 @@ const Header = () => {
 
       <div className="contact__list flex-row">
         <div className="contact__item">
-          <a href="" className="contact__link contact__link--linkedIn">
+          <a
+            href="https://linkedin.com/in/chase-whitney"
+            className="contact__link contact__link--linkedIn"
+            target="_blank"
+          >
             <svg aria-hidden="true" viewBox="0 0 448 512" className="nav__icon">
               <path
                 fill="currentColor"
@@ -24,7 +28,11 @@ const Header = () => {
           </a>
         </div>
         <div className="contact__item">
-          <a href="" className="contact__link contact__link--gitHub">
+          <a
+            href="https://github.com/chasewhitney"
+            className="contact__link contact__link--gitHub"
+            target="_blank"
+          >
             <svg aria-hidden="true" viewBox="0 0 496 512" className="nav__icon">
               <path
                 fill="currentColor"
@@ -34,7 +42,11 @@ const Header = () => {
           </a>
         </div>
         <div className="contact__item">
-          <a href="" className="contact__link contact__link--resume">
+          <a
+            href="https://github.com/chasewhitney"
+            className="contact__link contact__link--resume"
+            target="_blank"
+          >
             <svg aria-hidden="true" viewBox="0 0 384 512" className="nav__icon">
               <path
                 fill="currentColor"
@@ -44,7 +56,11 @@ const Header = () => {
           </a>
         </div>
         <div className="contact__item">
-          <a href="" className="contact__link contact__link--email">
+          <a
+            href="https://github.com/chasewhitney"
+            className="contact__link contact__link--email"
+            target="_blank"
+          >
             <svg aria-hidden="true" viewBox="0 0 512 512" className="nav__icon">
               <path
                 fill="currentColor"

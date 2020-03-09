@@ -16,21 +16,11 @@
       "HTML/CSS",
       "Styled-components"
     ],
-    "about": "Web application developed for personal use which allows the user to log in and track meals. Nutritional information can be entered manually, pulled from the Nutritionix API by means of a search bar and dropdown menu, or entered automatically from the Favorites list. The application will display daily calorie, fat, carbohydrate, fiber, sugar, protein, sodium, and net carb intake for users on a ketogenic diet. Historical daily totals are also available to view.",
+    "about": "Web application which allows the user to log in using Google OAuth and track meals. Nutritional information can be entered manually, pulled from the Nutritionix API by means of a search bar and dropdown menu, or entered automatically from the Favorites list. The application will display daily calorie, fat, carbohydrate, fiber, sugar, protein, sodium, and net carb intake for users on a ketogenic diet. Historical daily totals are also available to view.",
     "note": "",
     "demoLink": "https://food-tracker-react.herokuapp.com/",
     "codeLink": "https://github.com/chasewhitney/meal-tracker-react",
-    "image": "./img/ctr-dashboard.png"
-  },
-  {
-    "name": "DB Builder for D&D Spell Wiki",
-    "stack": [],
-    "techs": ["Axios", "fs"],
-    "about": "Queries D&D 5e API and writes spell data for all Dungeons & Dragons 5th edition spells to spellData.json",
-    "note": "",
-    "demoLink": "",
-    "codeLink": "https://github.com/chasewhitney/dbBuilder-DnDSpells",
-    "image": "./img/ctr-dropdown.png"
+    "image": "ctr-dashboard.png"
   },
   {
     "name": "Meal-Tracker v2 Back End",
@@ -40,7 +30,7 @@
       "Node",
       "MongoDB",
       "Mongoose",
-      "Jasonwebtoken",
+      "Jsonwebtoken",
       "Bcryptjs",
       "Joi",
       "Winston@2",
@@ -50,7 +40,7 @@
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/ct-backend",
-    "image": "./img/ctr-dropdown.png"
+    "image": "ctr-dropdown.png"
   },
   {
     "name": "GameNight Web App",
@@ -68,7 +58,7 @@
     "note": "Because GoogleMaps is no longer free, app demo is unavailable.",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/gamenight",
-    "image": "./img/ctr-dropdown.png"
+    "image": "ctr-dropdown.png"
   },
   {
     "name": "Goal Tracker CI",
@@ -88,7 +78,17 @@
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/CHOICE",
-    "image": "http://www.choicejobs.org/templates/rt_interstellar/custom/images/logo/choice-logo-hrz.png"
+    "image": "ctr-dropdown.png"
+  },
+  {
+    "name": "D&D Spell Wiki - DB Builder",
+    "stack": [],
+    "techs": ["Axios", "fs"],
+    "about": "Queries D&D 5e API and writes spell data for all Dungeons & Dragons 5th edition spells to spellData.json",
+    "note": "",
+    "demoLink": "",
+    "codeLink": "https://github.com/chasewhitney/dbBuilder-DnDSpells",
+    "image": "ctr-dropdown.png"
   },
   {
     "name": "LoL Recent Game Data - D3 Sunburst",
@@ -98,16 +98,16 @@
     "note": "Riot API has since changed, so the demo will be unavailable until this app is updated",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/riotapi-v2",
-    "image": "./img/ctr-dropdown.png"
+    "image": "ctr-dropdown.png"
   },
   {
     "name": "Portfolio Page",
     "stack": ["React"],
     "techs": ["React", "HTML/CSS", "SASS"],
-    "about": "Page to make viewing my recent projects easy",
+    "about": "Page to make viewing recent projects easy.",
     "note": "",
     "demoLink": "",
-    "codeLink": "www.notPushedToGitHubYet.com",
-    "image": "./img/ctr-dropdown.png"
+    "codeLink": "https://github.com/chasewhitney/riotapi-v2",
+    "image": "ctr-dropdown.png"
   }
 ]

@@ -1,6 +1,21 @@
 @import "variables";
 @import "animations";
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $cyan;
+  border-radius: 10px;
+}
+
 *,
 *::before,
 *::after {
@@ -140,6 +155,7 @@ body {
 }
 
 .project__card {
+  cursor: pointer;
   position: relative;
   width: 47%;
   padding-bottom: 30%;
@@ -173,6 +189,113 @@ body {
     & li {
       margin: 4px;
     }
+  }
+}
+
+.project__card__modal {
+  width: 100rem;
+  height: 50rem;
+}
+
+.modal__imageContainer {
+  display: flex;
+  align-items: center;
+  min-width: 60rem;
+  max-width: 70rem;
+  min-height: 50rem;
+  background-color: #191a1d;
+  padding: 2rem;
+}
+
+.modal__image {
+  width: 100%;
+}
+
+.modal__content__container {
+  background-color: #1f2023;
+  padding: 2rem;
+}
+
+.modal__name {
+  font-size: 3rem;
+  color: $default;
+}
+
+.modal__techs_container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1f2023;
+}
+
+.modal_techs_item {
+  font-family: "Roboto";
+  // letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  background-color: #21242b;
+  color: $cyan;
+  width: auto;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid $blue;
+}
+
+.modal__about__header {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: $default;
+}
+
+.modal__about__content {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  letter-spacing: 0.1rem;
+  color: $cyan;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-grow: 1;
+
+  /* width */
+}
+
+.modal__links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5rem;
+  // background-color: green;
+  margin: 2rem 2rem 0 0;
+}
+
+.modal__links__anchor {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Staatliches";
+  color: #242529;
+  font-size: 2rem;
+  height: 4rem;
+  width: 8rem;
+  border-radius: 5px;
+  margin: 0 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__links__anchor--demo {
+  background-color: $green;
+
+  &:hover {
+    background-color: hsl(286, 60%, 67%);
+  }
+}
+
+.modal__links__anchor--code {
+  background-color: $green;
+
+  &:hover {
+    background-color: hsl(286, 60%, 67%);
   }
 }
 
