@@ -2,7 +2,12 @@ import React from "react";
 import "./sass/main.scss";
 import Modal from "react-modal";
 
-const renderStack = stack => stack.map(v => <li key={v}>{v}</li>);
+const renderStack = stack =>
+  stack.map(v => (
+    <div class="stack--item" key={v}>
+      {v}
+    </div>
+  ));
 
 const renderTechs = techs =>
   techs.map(v => (
@@ -18,10 +23,42 @@ const renderDemoLink = url => {
         href={url}
         className="modal__links__anchor modal__links__anchor--demo"
         target="_blank"
+        rel="noopener noreferrer"
       >
         DEMO
       </a>
     );
+};
+
+const renderImage = data => {
+  if (data.image) {
+    return (
+      <>
+        <img
+          src={require(`./img/${data.image}`)}
+          className="modal__image"
+          alt=""
+        />
+      </>
+    );
+  } else {
+    return (
+      <div
+        style={{
+          fontSize: "10rem",
+          margin: "auto"
+        }}
+      >
+        NO IMAGE
+      </div>
+    );
+  }
+};
+
+const renderNote = note => {
+  if (note) {
+    return <div className="modal__projectNote">*{note}</div>;
+  }
 };
 
 const customStyles = {
@@ -58,13 +95,14 @@ const Card = props => {
     setIsOpen(false);
   }
 
+  // <div className="project__card--stack">
+  //   <div className="stack--label">Stack</div>
+  //   {renderStack(data.stack)}
+  // </div>
   return (
     <>
       <div className="project__card" onClick={openModal}>
-        <div className="project__card__content">
-          <h3>{data.name}</h3>
-          <ul>{renderStack(data.stack)}</ul>
-        </div>
+        <div className="project__card--name">{data.name}</div>
       </div>
       <Modal
         isOpen={modalIsOpen}
@@ -74,12 +112,7 @@ const Card = props => {
         contentLabel="Example Modal"
       >
         <div className="project__card__modal flex-row">
-          <div className="modal__imageContainer">
-            <img
-              src={require(`./img/${data.image}`)}
-              className="modal__image"
-            />
-          </div>
+          <div className="modal__imageContainer">{renderImage(data)}</div>
           <div className="modal__content__container flex-column">
             <div className="modal__name">{data.name}</div>
             <div className="modal__techs_container">
@@ -87,12 +120,14 @@ const Card = props => {
             </div>
             <div className="modal__about__header">ABOUT</div>
             <div className="modal__about__content">{data.about}</div>
+            <div>{renderNote(data.note)}</div>
             <div className="modal__links">
               {renderDemoLink(data.demoLink)}
               <a
                 href={data.codeLink}
                 className="modal__links__anchor modal__links__anchor--code"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 CODE
               </a>
@@ -105,11 +140,3 @@ const Card = props => {
 };
 
 export default Card;
-
-// H- ctr
-// DNDWiki
-// ct backend
-// gamenight
-// cSharp todo
-// choice
-// H-riotAPI

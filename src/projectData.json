@@ -1,6 +1,6 @@
 [
   {
-    "name": "Meal-Tracker Web App",
+    "name": "Meal Tracker Web App",
     "stack": ["React", "Express", "Node", "MongoDB"],
     "techs": [
       "React",
@@ -23,7 +23,7 @@
     "image": "ctr-dashboard.png"
   },
   {
-    "name": "Meal-Tracker v2 Back End",
+    "name": "Meal Tracker v2 Back End",
     "stack": ["Express", "Node", "MongoDB"],
     "techs": [
       "Express",
@@ -40,7 +40,7 @@
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/ct-backend",
-    "image": "ctr-dropdown.png"
+    "image": ""
   },
   {
     "name": "GameNight Web App",
@@ -55,10 +55,10 @@
       "HTML/CSS"
     ],
     "about": "This app was my final solo project at Prime Digital Academy. Allows users to create, manage, search for, and apply to attend local gaming/sports events. Events are created as either a board game, video game, or outdoor event. Created events appear in a Google Maps UI which can be interacted with, allowing users to review event details, save the event to a My Events section and request approval from the host to attend the event. Once the event host approves a request to attend, the approved user has access to the event's address.",
-    "note": "Because GoogleMaps is no longer free, app demo is unavailable.",
+    "note": "Because Google Maps now charges for use, app demo is no longer available.",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/gamenight",
-    "image": "ctr-dropdown.png"
+    "image": ""
   },
   {
     "name": "Goal Tracker CI",
@@ -78,27 +78,27 @@
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/CHOICE",
-    "image": "ctr-dropdown.png"
+    "image": ""
   },
   {
     "name": "D&D Spell Wiki - DB Builder",
-    "stack": [],
+    "stack": ["Node"],
     "techs": ["Axios", "fs"],
     "about": "Queries D&D 5e API and writes spell data for all Dungeons & Dragons 5th edition spells to spellData.json",
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/dbBuilder-DnDSpells",
-    "image": "ctr-dropdown.png"
+    "image": "dndspells.png"
   },
   {
     "name": "LoL Recent Game Data - D3 Sunburst",
     "stack": ["Angular", "Express", "Node"],
     "techs": ["Angular 1.6", "Express", "Node", "d3", "HTML/CSS"],
     "about": "Takes a League of Legends summoner name and displays a sunburst as an interactive visual representation of the results of the player's recently-played matches.",
-    "note": "Riot API has since changed, so the demo will be unavailable until this app is updated",
-    "demoLink": "",
+    "note": "",
+    "demoLink": "https://riotapid3.herokuapp.com",
     "codeLink": "https://github.com/chasewhitney/riotapi-v2",
-    "image": "ctr-dropdown.png"
+    "image": "riotapi.png"
   },
   {
     "name": "Portfolio Page",
@@ -107,7 +107,7 @@
     "about": "Page to make viewing recent projects easy.",
     "note": "",
     "demoLink": "",
-    "codeLink": "https://github.com/chasewhitney/riotapi-v2",
-    "image": "ctr-dropdown.png"
+    "codeLink": "https://github.com/chasewhitney/portfolioPage",
+    "image": ""
   }
 ]

@@ -1,21 +1,20 @@
 @import "variables";
 @import "animations";
-@import "mixins";
 
-// ::-webkit-scrollbar {
-//   width: 10px;
-// }
-//
-// /* Track */
-// ::-webkit-scrollbar-track {
-//   border-radius: 10px;
-// }
-//
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//   background: $cyan;
-//   border-radius: 10px;
-// }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $cyan;
+  border-radius: 10px;
+}
 
 *,
 *::before,
@@ -55,35 +54,16 @@ body {
 .aboutme {
   text-align: center;
   background-color: $bg-1;
-  padding: 8rem 2rem;
+  padding: 10rem;
   border-bottom: 2px solid #49515f;
-
-  @include respond(tab-land) {
-    padding: 7rem 2rem;
-    // padding-bottom: 5rem;
-  }
-
-  @include respond(tab-port) {
-    padding: 5rem 1rem;
-    // padding-bottom: 2rem;
-  }
 }
 
 .aboutme__header {
   font-size: 9rem;
-  // letter-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
   animation-name: moveInLeft;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
-
-  @include respond(tab-land) {
-    font-size: 7rem;
-    letter-spacing: 0.1rem;
-  }
-
-  @include respond(tab-port) {
-    font-size: 5.8rem;
-  }
 }
 
 .aboutme__subhead {
@@ -93,14 +73,6 @@ body {
   animation-name: moveInRight;
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
-
-  @include respond(tab-land) {
-    font-size: 2.5rem;
-  }
-
-  @include respond(tab-port) {
-    font-size: 2.1rem;
-  }
 }
 
 .contact__list {
@@ -109,10 +81,6 @@ body {
   animation-name: moveInBottom;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
-
-  @include respond(tab-land) {
-    padding: 1rem;
-  }
 }
 
 .contact__item {
@@ -121,10 +89,6 @@ body {
 
   &:hover {
     margin: 0.5rem;
-  }
-
-  @include respond(tab-land) {
-    height: 4rem;
   }
 }
 
@@ -143,16 +107,6 @@ body {
     height: 6rem;
     width: 6rem;
   }
-
-  // @include respond(tab-land) {
-  //   height: 4rem;
-  //   width: 4rem;
-  //
-  //   &:hover {
-  //     height: 5rem;
-  //     width: 5rem;
-  //   }
-  // }
 }
 
 .contact__link--linkedIn {
@@ -180,21 +134,12 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
-  // @include respond(tab-land) {
-  //   height: 3.5rem;
-  // }
-  //
-  // @include respond(tab-port) {
-  //   height: 3rem;
-  // }
 }
 
 .projects__container {
   background-color: $bg-2;
   margin: 0 auto;
   width: 80%;
-  max-width: 1200px;
 }
 
 .projects__header {
@@ -203,74 +148,61 @@ body {
   text-align: left;
   padding-top: 3rem;
   margin: 0;
-
-  @include respond(tab-land) {
-    font-size: 3rem;
-  }
-
-  @include respond(tab-port) {
-    font-size: 2.5rem;
-  }
 }
 
 .projects__subhead {
   font-family: "Roboto", "Arial";
   font-size: 1.8rem;
   color: $cyan;
-
-  @include respond(tab-land) {
-    font-size: 1.5rem;
-  }
-  @include respond(tab-port) {
-    font-size: 1.2rem;
-  }
 }
 
 .projects__content {
   margin: 3rem 0;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  @include respond(tab-port) {
-    justify-content: center;
-  }
 }
 
 .project__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   cursor: pointer;
+  position: relative;
   width: 31%;
-  height: 30rem;
+  padding-bottom: 30%;
+  margin-bottom: 5rem;
   background-color: $bg-3;
   box-shadow: 0 0 10px #000;
-  margin-bottom: 3rem;
 
   &:hover {
     background-color: $bg-4;
   }
 
-  @include respond(tab-land) {
-    width: 47%;
-  }
-
-  @include respond(tab-port) {
-    width: 80%;
+  &__content {
   }
 }
 
-.project__card--name {
+.project__card__content {
+  // letter-spacing: 0.1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.project__card__content--name {
   text-align: center;
   font-size: 3.3rem;
 }
 
-.project__card--stack {
-  &--label {
+.project__card__content--stack {
+  & .stack--label {
     font-size: 2.5rem;
   }
 
-  &--item {
+  & .stack--item {
     font-size: 2.5rem;
   }
 }
