@@ -12,9 +12,7 @@
       "Passport",
       "Google OAuth 2.0",
       "Axios",
-      "Lodash",
-      "HTML/CSS",
-      "Styled-components"
+      "HTML/CSS"
     ],
     "about": "Web application which allows the user to log in using Google OAuth and track meals. Nutritional information can be entered manually, pulled from the Nutritionix API by means of a search bar and dropdown menu, or entered automatically from the Favorites list. The application will display daily calorie, fat, carbohydrate, fiber, sugar, protein, sodium, and net carb intake for users on a ketogenic diet. Historical daily totals are also available to view.",
     "note": "",
@@ -26,39 +24,40 @@
     "name": "Meal Tracker v2 Back End",
     "stack": ["Express", "Node", "MongoDB"],
     "techs": [
-      "Express",
       "Node",
+      "Express",
       "MongoDB",
       "Mongoose",
       "Jsonwebtoken",
-      "Bcryptjs",
       "Joi",
       "Winston@2",
       "Jest"
     ],
-    "about": "New back end for the next iteration of the Meal-Tracker app. Upgrades include logging, error-handling, unit and integration testing",
+    "about": "New back end for the next iteration of the Meal-Tracker app. Upgrades include logging, error-handling, unit and integration testing, and validation",
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/ct-backend",
     "image": ""
   },
   {
-    "name": "GameNight Web App",
-    "stack": ["Angular", "Express", "Node", "MongoDB"],
-    "techs": [
-      "Angular 1.6",
-      "Express",
-      "Node",
-      "MongoDB",
-      "Passport",
-      "Nodemailer",
-      "HTML/CSS"
-    ],
-    "about": "This app was my final solo project at Prime Digital Academy. Allows users to create, manage, search for, and apply to attend local gaming/sports events. Events are created as either a board game, video game, or outdoor event. Created events appear in a Google Maps UI which can be interacted with, allowing users to review event details, save the event to a My Events section and request approval from the host to attend the event. Once the event host approves a request to attend, the approved user has access to the event's address.",
-    "note": "Because Google Maps now charges for use, app demo is no longer available.",
+    "name": "D&D Spell Wiki - DB Builder",
+    "stack": ["Node"],
+    "techs": ["Node", "Axios", "fs"],
+    "about": "Queries D&D 5e API and writes spell data for all Dungeons & Dragons 5th edition spells to spellData.json",
+    "note": "",
     "demoLink": "",
-    "codeLink": "https://github.com/chasewhitney/gamenight",
-    "image": ""
+    "codeLink": "https://github.com/chasewhitney/dbBuilder-DnDSpells",
+    "image": "dndspells.png"
+  },
+  {
+    "name": "LoL Recent Game Data - D3 Sunburst",
+    "stack": ["Angular", "Express", "Node"],
+    "techs": ["Angular 1.6", "Express", "Node", "D3", "HTML/CSS"],
+    "about": "Takes a League of Legends summoner name and displays an interactive sunburst as a visual representation of the results of the player's recently-played matches.",
+    "note": "",
+    "demoLink": "https://riotapid3.herokuapp.com",
+    "codeLink": "https://github.com/chasewhitney/riotapi-v2",
+    "image": "riotapi.png"
   },
   {
     "name": "Goal Tracker CI",
@@ -81,33 +80,21 @@
     "image": ""
   },
   {
-    "name": "D&D Spell Wiki - DB Builder",
-    "stack": ["Node"],
-    "techs": ["Axios", "fs"],
-    "about": "Queries D&D 5e API and writes spell data for all Dungeons & Dragons 5th edition spells to spellData.json",
-    "note": "",
+    "name": "GameNight Web App",
+    "stack": ["Angular", "Express", "Node", "MongoDB"],
+    "techs": [
+      "Angular 1.6",
+      "Express",
+      "Node",
+      "MongoDB",
+      "Passport",
+      "Nodemailer",
+      "HTML/CSS"
+    ],
+    "about": "This app was my final solo project at Prime Digital Academy. Allows users to create, manage, search for, and apply to attend local gaming/sports events. Events are created as either a board game, video game, or outdoor event. Created events appear in a Google Maps UI which can be interacted with, allowing users to review event details, save the event to a My Events section and request approval from the host to attend the event. Once the event host approves a request to attend, the approved user has access to the event's address.",
+    "note": "Because Google Maps now charges for use, app demo is no longer available.",
     "demoLink": "",
-    "codeLink": "https://github.com/chasewhitney/dbBuilder-DnDSpells",
-    "image": "dndspells.png"
-  },
-  {
-    "name": "LoL Recent Game Data - D3 Sunburst",
-    "stack": ["Angular", "Express", "Node"],
-    "techs": ["Angular 1.6", "Express", "Node", "d3", "HTML/CSS"],
-    "about": "Takes a League of Legends summoner name and displays a sunburst as an interactive visual representation of the results of the player's recently-played matches.",
-    "note": "",
-    "demoLink": "https://riotapid3.herokuapp.com",
-    "codeLink": "https://github.com/chasewhitney/riotapi-v2",
-    "image": "riotapi.png"
-  },
-  {
-    "name": "Portfolio Page",
-    "stack": ["React"],
-    "techs": ["React", "HTML/CSS", "SASS"],
-    "about": "Page to make viewing recent projects easy.",
-    "note": "",
-    "demoLink": "",
-    "codeLink": "https://github.com/chasewhitney/portfolioPage",
+    "codeLink": "https://github.com/chasewhitney/gamenight",
     "image": ""
   }
 ]

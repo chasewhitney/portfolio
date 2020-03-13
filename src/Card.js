@@ -34,11 +34,7 @@ const renderImage = data => {
   if (data.image) {
     return (
       <>
-        <img
-          src={require(`./img/${data.image}`)}
-          className="modal__image"
-          alt=""
-        />
+        <img src={require(`./img/${data.image}`)} className="modal__image" />
       </>
     );
   } else {
@@ -95,10 +91,11 @@ const Card = props => {
     setIsOpen(false);
   }
 
-  // <div className="project__card--stack">
+  // <div className="project__card__content--stack">
   //   <div className="stack--label">Stack</div>
   //   {renderStack(data.stack)}
   // </div>
+
   return (
     <>
       <div className="project__card" onClick={openModal}>
@@ -111,7 +108,7 @@ const Card = props => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <div className="project__card__modal flex-row">
+        <div className="project__card__modal">
           <div className="modal__imageContainer">{renderImage(data)}</div>
           <div className="modal__content__container flex-column">
             <div className="modal__name">{data.name}</div>
