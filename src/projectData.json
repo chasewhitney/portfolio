@@ -28,7 +28,7 @@
       "Express",
       "MongoDB",
       "Mongoose",
-      "Jsonwebtoken",
+      "JsonWebToken",
       "Joi",
       "Winston@2",
       "Jest"
@@ -37,7 +37,7 @@
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/ct-backend",
-    "image": ""
+    "image": "dndspells.png"
   },
   {
     "name": "D&D Spell Wiki - DB Builder",
@@ -53,14 +53,14 @@
     "name": "LoL Recent Game Data - D3 Sunburst",
     "stack": ["Angular", "Express", "Node"],
     "techs": ["Angular 1.6", "Express", "Node", "D3", "HTML/CSS"],
-    "about": "Takes a League of Legends summoner name and displays an interactive sunburst as a visual representation of the results of the player's recently-played matches.",
+    "about": "Takes a League of Legends summoner name and displays an interactive sunburst as a visual representation of the results of the player's recently-played matches. Results are grouped by lane, then champion, then game result.",
     "note": "",
     "demoLink": "https://riotapid3.herokuapp.com",
     "codeLink": "https://github.com/chasewhitney/riotapi-v2",
     "image": "riotapi.png"
   },
   {
-    "name": "Goal Tracker CI",
+    "name": "Goal Tracker CI Web App",
     "stack": ["Angular", "Express", "Node", "SQL"],
     "techs": [
       "Angular 1.6",
@@ -71,13 +71,13 @@
       "Passport",
       "Nodemailer",
       "HTML/CSS",
-      "admin/user authorization"
+      "Admin/User authorization"
     ],
-    "about": "Goal Tracker CI was developed for CHOICE, INC and allows the staff at three different locations to track the personal and professional goals of the participants in their day program services, while also providing data on goal completion over a set period of time. At the basic staff level, users will be able to enter morning and afternoon goal completion, view previous days’ entries, and mark a participant absent. Case managers will also be able to create and edit personalized goals for participants and review summary data for three month and six month periods in order to write reports. Location administrators will be able to manage staff, including add and delete staff accounts; manage participants, including adding and removing participants and assigning case managers; and managing job site information. Developed by Amanda Kirchner, Nicole Martin, Ted Cross, and myself.",
+    "about": "Goal Tracker CI was developed for CHOICE, INC and allows the staff at three different locations to track the personal and professional goals of the participants in their day program services, while also providing data on goal completion over a set period of time. At the basic staff level, users will be able to enter morning and afternoon goal completion, view previous days’ entries, and mark a participant absent. Case managers will also be able to create and edit personalized goals for participants and review summary data for three month and six month periods in order to write reports. Location administrators will be able to manage staff, including add and delete staff accounts; manage participants, including adding and removing participants and assigning case managers; and managing job site information. Developed by Amanda Kirchner, Chase Whitney, Nicole Martin, and Ted Cross",
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/CHOICE",
-    "image": ""
+    "image": "dndspells.png"
   },
   {
     "name": "GameNight Web App",
@@ -89,12 +89,13 @@
       "MongoDB",
       "Passport",
       "Nodemailer",
-      "HTML/CSS"
+      "HTML/CSS",
+      "Angular Material"
     ],
     "about": "This app was my final solo project at Prime Digital Academy. Allows users to create, manage, search for, and apply to attend local gaming/sports events. Events are created as either a board game, video game, or outdoor event. Created events appear in a Google Maps UI which can be interacted with, allowing users to review event details, save the event to a My Events section and request approval from the host to attend the event. Once the event host approves a request to attend, the approved user has access to the event's address.",
     "note": "Because Google Maps now charges for use, app demo is no longer available.",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/gamenight",
-    "image": ""
+    "image": "dndspells.png"
   }
 ]

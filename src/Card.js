@@ -4,7 +4,7 @@ import Modal from "react-modal";
 
 const renderStack = stack =>
   stack.map(v => (
-    <div class="stack--item" key={v}>
+    <div className={"stack__items__item stack__items__item--" + v} key={v}>
       {v}
     </div>
   ));
@@ -41,7 +41,7 @@ const renderImage = data => {
     return (
       <div
         style={{
-          fontSize: "10rem",
+          fontSize: "5rem",
           margin: "auto"
         }}
       >
@@ -99,7 +99,19 @@ const Card = props => {
   return (
     <>
       <div className="project__card" onClick={openModal}>
-        <div className="project__card--name">{data.name}</div>
+        <div className="project__card__name">{data.name}</div>
+        <div className="project__card__info">
+          <div className="project__card__leftSide">
+            <div className="project__card__imageContainer">
+              {renderImage(data)}
+            </div>
+          </div>
+
+          <div className="project__card__rightSide">
+            <div className="stack__header">STACK</div>
+            <div className="stack__items">{renderStack(data.stack)}</div>
+          </div>
+        </div>
       </div>
       <Modal
         isOpen={modalIsOpen}
