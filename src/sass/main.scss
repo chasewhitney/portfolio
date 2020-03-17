@@ -76,39 +76,39 @@ body {
 
   @include respond(pc-big) {
     font-size: 10rem;
-    color: orange;
+    // color: orange;
   }
 
   @include respond(pc-bigger) {
     font-size: 13rem;
-    color: red;
+    // color: red;
   }
 
-  @include respond(pc-small) {
-    color: yellow;
-  }
+  // @include respond(pc-small) {
+  //   color: yellow;
+  // }
 
   @include respond(tab-land) {
     font-size: 7rem;
     letter-spacing: 0.1rem;
-    color: green;
+    // color: green;
   }
 
   @include respond(tab-port) {
     font-size: 7rem;
     line-height: 6.5rem;
-    color: blue;
+    // color: blue;
   }
 
   @include respond(phone-land) {
     font-size: 6rem;
     line-height: 6rem;
-    color: pink;
+    // color: pink;
   }
 
-  @include respond(phone-port) {
-    color: purple;
-  }
+  // @include respond(phone-port) {
+  //   color: purple;
+  // }
 }
 
 .aboutme__subhead {
