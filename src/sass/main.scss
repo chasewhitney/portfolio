@@ -76,25 +76,38 @@ body {
 
   @include respond(pc-big) {
     font-size: 10rem;
+    color: orange;
   }
 
   @include respond(pc-bigger) {
     font-size: 13rem;
+    color: red;
+  }
+
+  @include respond(pc-small) {
+    color: yellow;
   }
 
   @include respond(tab-land) {
     font-size: 7rem;
     letter-spacing: 0.1rem;
+    color: green;
   }
 
   @include respond(tab-port) {
     font-size: 7rem;
     line-height: 6.5rem;
+    color: blue;
   }
 
   @include respond(phone-land) {
     font-size: 6rem;
     line-height: 6rem;
+    color: pink;
+  }
+
+  @include respond(phone-port) {
+    color: purple;
   }
 }
 
@@ -118,8 +131,8 @@ body {
     font-size: 2.5rem;
   }
 
-  @include respond(tab-port) {
-    font-size: 2.5rem;
+  @include respond(phone-port) {
+    font-size: 2rem;
   }
 }
 
@@ -138,12 +151,13 @@ body {
 .contact__item {
   margin: 1rem;
   height: 5rem;
+
   &:hover {
     margin: 0.5rem;
-  }
 
-  @include respond(tab-land) {
-    height: 4rem;
+    @include respond(tab-land) {
+      margin: 1rem;
+    }
   }
 }
 
@@ -182,6 +196,11 @@ body {
       width: 8rem;
     }
   }
+
+  @include respond(tab-land) {
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 .contact__link--linkedIn {
@@ -209,14 +228,6 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
-  // @include respond(tab-land) {
-  //   height: 3.5rem;
-  // }
-  //
-  // @include respond(tab-port) {
-  //   height: 3rem;
-  // }
 }
 
 .tooltip {
@@ -233,14 +244,13 @@ body {
   font-size: 1.7rem;
   text-align: center;
   height: 5rem;
-  width: 5rem;
+  width: 100%;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 1;
 
   @include respond(pc-big) {
     font-size: 2.2rem;
@@ -248,6 +258,19 @@ body {
 
   @include respond(pc-bigger) {
     font-size: 2.4rem;
+  }
+
+  @include respond(tab-land) {
+    @include respond(tab-land) {
+      top: 93%;
+      left: 0;
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+      visibility: visible;
+      height: auto;
+      width: 100%;
+      border-radius: 3px;
+    }
   }
 }
 
@@ -300,6 +323,7 @@ body {
   background-color: $bg-3;
   box-shadow: 0 0 10px #000;
   margin-bottom: 3rem;
+  padding: 2rem;
 
   &:hover {
     background-color: $bg-4;
@@ -329,48 +353,59 @@ body {
 }
 
 .ReactModal__Content--after-open {
-  width: 90%;
-}
-
-.project__card__modal {
-  display: flex;
-  width: 100%;
-  height: 50rem;
+  width: 85%;
+  max-width: 100rem;
 
   @include respond(pc-big) {
-    height: 60rem;
+    max-width: 120rem;
   }
 
-  @include respond(pc-bigger) {
-    height: 70rem;
+  @include respond(pc-big) {
+    max-width: 120rem;
   }
+}
+
+.project__modal {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
 
   @include respond(tab-land) {
-    height: 50rem;
-  }
-
-  @include respond(tab-port) {
-    height: auto;
-    max-height: 80rem;
     flex-direction: column;
   }
+}
 
-  @include respond(phone-land) {
-    max-height: 30rem;
-  }
+.project__modal__close {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+  flex-shrink: 0;
+  background-color: transparent;
 
-  @include respond(phone-land) {
-    max-height: 60rem;
+  & svg {
+    z-index: 1;
+    height: 4rem;
+    width: 4rem;
+    color: $cyan;
+
+    &:hover {
+      color: $red-1;
+    }
   }
 }
 
 .modal__imageContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   min-width: 65%;
-
-  // height: 100%;
-  background-color: #191a1d;
+  background-color: #1f2023;
   padding: 2rem;
 
   @include respond(tab-port) {
@@ -379,12 +414,19 @@ body {
 }
 
 .modal__image {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  flex-shrink: 1;
+
+  @include respond(phone-land) {
+    max-width: 80%;
+  }
 }
 
+// modal content
 .modal__content__container {
-  background-color: #1f2023;
   padding: 2rem;
+  padding-top: 2.5rem;
   min-width: 35%;
 
   @include respond(tab-port) {
@@ -396,15 +438,20 @@ body {
 .modal__name {
   font-size: 3rem;
   color: $default;
+  flex-shrink: 0;
+
+  @include respond(phone-port) {
+    font-size: 2.5rem;
+  }
 }
 
-.modal__techs_container {
+.modal__techs__container {
   display: flex;
   flex-wrap: wrap;
-  background-color: #1f2023;
+  flex-shrink: 0;
 }
 
-.modal_techs_item {
+.modal__techs__item {
   font-family: "Roboto";
   // letter-spacing: 0.1rem;
   font-size: 1.3rem;
@@ -415,12 +462,14 @@ body {
   margin: 0.5rem;
   border-radius: 3px;
   border: 1px solid $blue;
+  flex-shrink: 0;
 }
 
 .modal__about__header {
   font-size: 2rem;
   margin-top: 1rem;
   color: $default;
+  flex-shrink: 0;
 }
 
 .modal__about__content {
@@ -433,6 +482,8 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   flex-grow: 1;
+  flex-shrink: 1;
+  min-height: 10rem;
 }
 
 .modal__projectNote {
@@ -448,6 +499,10 @@ body {
   height: 5rem;
   // background-color: green;
   margin: 1rem 2rem 0 0;
+
+  @include respond(phone-land) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .modal__links__anchor {
