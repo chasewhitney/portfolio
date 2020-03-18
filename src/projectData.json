@@ -37,7 +37,7 @@
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/ct-backend",
-    "image": "dndspells.png"
+    "image": "ctr-backend.png"
   },
   {
     "name": "D&D Spell Wiki - DB Builder",
@@ -77,7 +77,7 @@
     "note": "",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/CHOICE",
-    "image": "dndspells.png"
+    "image": "choicepic.png"
   },
   {
     "name": "GameNight Web App",
@@ -96,6 +96,6 @@
     "note": "Because Google Maps now charges for use, app demo is no longer available.",
     "demoLink": "",
     "codeLink": "https://github.com/chasewhitney/gamenight",
-    "image": "dndspells.png"
+    "image": "gamenight.png"
   }
 ]

@@ -139,7 +139,10 @@ const Card = props => {
               />
             </svg>
           </button>
-          <div className="modal__imageContainer">{renderImage(data)}</div>
+          <div className="modal__imageContainer">
+            <span className="helper"></span>
+            {renderImage(data)}
+          </div>
           <div className="modal__content__container flex-column">
             <div className="modal__name">{data.name}</div>
             <div className="modal__techs__container">
