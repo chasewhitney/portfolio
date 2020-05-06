@@ -387,9 +387,11 @@ body {
   width: 100%;
   text-align: center;
 
+
   & img {
     max-width: 100%;
     max-height: 100%;
+    border: 1px solid #49515F;
   }
 }
 

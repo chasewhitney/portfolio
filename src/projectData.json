@@ -1,4 +1,19 @@
-[
+[ {
+  "name": "Socket.IO Chat App",
+  "stack": ["React", "Express", "Node"],
+  "techs": [
+    "React",
+    "Socket.IO",
+    "Express",
+    "Node",
+    "HTML/CSS"
+  ],
+  "about": "Web application which allows users to choose a name and chat with others in real-time by creating or joining an existing chatroom.",
+  "note": "",
+  "demoLink": "https://react-chat-cw.herokuapp.com/",
+  "codeLink": "https://github.com/chasewhitney/chatApp",
+  "image": "chatApp.png"
+},
   {
     "name": "Meal Tracker Web App",
     "stack": ["React", "Express", "Node", "MongoDB"],
