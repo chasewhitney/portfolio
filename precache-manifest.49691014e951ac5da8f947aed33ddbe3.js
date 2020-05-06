@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf9cfb843affdefba10c3447f1b90803",
+    "revision": "c956022841c947a7e958dc5ca4ed0bef",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "f9ac788eb71c337c5882",
-    "url": "/portfolio/static/css/main.4e9944da.chunk.css"
+    "revision": "bf845940fbafcf2846ff",
+    "url": "/portfolio/static/css/main.b5d704d6.chunk.css"
   },
   {
     "revision": "f359c1bd7a8055a53ab7",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.8ae443d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9ac788eb71c337c5882",
-    "url": "/portfolio/static/js/main.d106c858.chunk.js"
+    "revision": "bf845940fbafcf2846ff",
+    "url": "/portfolio/static/js/main.c41cb2b3.chunk.js"
   },
   {
     "revision": "69864db663f493eae69d",
     "url": "/portfolio/static/js/runtime-main.4e7b3b44.js"
+  },
+  {
+    "revision": "55f3a53e69f6e63131cf2fa0e9321b4c",
+    "url": "/portfolio/static/media/chatApp.55f3a53e.png"
   },
   {
     "revision": "bf7f3447ac05c6cf48a995fc05b4be76",

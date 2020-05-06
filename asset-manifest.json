@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4e9944da.chunk.css",
-    "main.js": "/portfolio/static/js/main.d106c858.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d106c858.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.b5d704d6.chunk.css",
+    "main.js": "/portfolio/static/js/main.c41cb2b3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c41cb2b3.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.4e7b3b44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.4e7b3b44.js.map",
     "static/js/2.8ae443d9.chunk.js": "/portfolio/static/js/2.8ae443d9.chunk.js",
     "static/js/2.8ae443d9.chunk.js.map": "/portfolio/static/js/2.8ae443d9.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.98a4d361a88ce545635b4f8a5730e901.js": "/portfolio/precache-manifest.98a4d361a88ce545635b4f8a5730e901.js",
+    "precache-manifest.49691014e951ac5da8f947aed33ddbe3.js": "/portfolio/precache-manifest.49691014e951ac5da8f947aed33ddbe3.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.4e9944da.chunk.css.map": "/portfolio/static/css/main.4e9944da.chunk.css.map",
+    "static/css/main.b5d704d6.chunk.css.map": "/portfolio/static/css/main.b5d704d6.chunk.css.map",
     "static/js/2.8ae443d9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8ae443d9.chunk.js.LICENSE.txt",
+    "static/media/chatApp.png": "/portfolio/static/media/chatApp.55f3a53e.png",
     "static/media/choicepic.png": "/portfolio/static/media/choicepic.bf7f3447.png",
     "static/media/ctr-backend.png": "/portfolio/static/media/ctr-backend.13961617.png",
     "static/media/ctr-dashboard.png": "/portfolio/static/media/ctr-dashboard.3cfd7c52.png",
@@ -23,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.4e7b3b44.js",
     "static/js/2.8ae443d9.chunk.js",
-    "static/css/main.4e9944da.chunk.css",
-    "static/js/main.d106c858.chunk.js"
+    "static/css/main.b5d704d6.chunk.css",
+    "static/js/main.c41cb2b3.chunk.js"
   ]
 }
