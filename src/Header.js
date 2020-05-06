@@ -51,7 +51,7 @@ const Header = () => {
         </div>
         <div className="contact__item tooltip">
           <a
-            href="https://drive.google.com/open?id=1Gi7Le2zyea1jGUsSzpGwjqNf92mIeDZZ"
+            href="https://docs.google.com/document/d/1UF5-bt92ZGvEZjK_Qditpd1G5749s0gAcVzzfyRxBc8/edit?usp=sharing"
             className="contact__link contact__link--resume"
             target="_blank"
             rel="noopener noreferrer"
